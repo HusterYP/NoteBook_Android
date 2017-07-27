@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/data_priorityHistogram"
+        android:title="优先级柱状图" />
+    <item
+        android:id="@+id/data_priorityPiechart"
+        android:title="优先级饼状图" />
+    <item
+        android:id="@+id/data_completeHistogram"
+        android:title="完成情况柱状图" />
+    <item
+        android:id="@+id/data_completePiechart"
+        android:title="完成情况饼状图" />
+
+
+</menu>

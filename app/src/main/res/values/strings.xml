@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NoteBook_1</string>
+    <string name="New">New</string>
+    <string name="sort_priority">优先级排序</string>
+    <string name="sort_time">时间排序</string>
+    <string name="sort_default">默认排序</string>
+    <string name="set_clock">设置闹钟</string>
+    <string name="calSure">确定</string>
+    <string name="calCancel">取消</string>
+    <string name="content_editDate">编辑截止时间</string>
+</resources>

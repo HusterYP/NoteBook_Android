@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7B724"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/input_choseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btOnClick"
+                android:text="选择截止时间" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/input_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择优先级"
+                android:id="@+id/input_chosePriority"
+                android:onClick="btOnChosePriority"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:id="@+id/p"
+                android:layout_toRightOf="@+id/input_chosePriority"/>
+
+            <TextView
+                android:id="@+id/input_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/p"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/input_checkbox"
+                android:layout_toLeftOf="@+id/input_checkbox"
+                android:text="完成"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/input_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:singleLine="true"
+            android:textColor="#0000ff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/input_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Content"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/input_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btOnClick"
+            android:text="取消"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/input_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:onClick="btOnClick"
+            android:text="保存"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
