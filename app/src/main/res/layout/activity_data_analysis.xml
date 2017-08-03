@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B7B724"
+    android:background="#2B9D9A"
     tools:context="com.example.administrator.notebook_1.DataAnalysis">
 
     <TextView

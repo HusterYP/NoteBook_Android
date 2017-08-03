@@ -74,6 +74,9 @@ public class NewContent extends AppCompatActivity {
         inputTitle = (EditText) findViewById(R.id.input_title);
         inputContent = (EditText) findViewById(R.id.input_content);
         checkBox = (CheckBox) findViewById(R.id.input_checkbox);
+
+        //默认优先级为1
+        inputPriority.setText("1");
     }
 
     @Override
@@ -111,7 +114,7 @@ public class NewContent extends AppCompatActivity {
     public void btOnChosePriority(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final String[] items = {"1", "2", "3", "4", "5"};
-        builder.setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
+        builder.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
 
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -129,7 +132,7 @@ public class NewContent extends AppCompatActivity {
         String priority = inputPriority.getText().toString();
         String title = inputTitle.getText().toString();
         String content = inputContent.getText().toString();
-        if (time.isEmpty() && priority.isEmpty() && title.isEmpty() && content.isEmpty()) {
+        if (time.isEmpty() && title.isEmpty() && content.isEmpty()) {
             Toast.makeText(this, "Empty Event ! No Saving", Toast.LENGTH_SHORT).show();
         }
         else {
